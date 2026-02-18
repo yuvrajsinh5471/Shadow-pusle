@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Pulse | 2D Stealth Rhythm</title>
+    <style>
+        body { background: #0a0a0a; color: #00ffcc; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        #game-container { position: relative; border: 4px solid #333; box-shadow: 0 0 20px rgba(0, 255, 204, 0.2); }
+        canvas { background: #111; display: block; }
+        .ui-panel { margin-top: 15px; text-align: center; }
+        .status { font-size: 1.2rem; margin-bottom: 5px; text-transform: uppercase; }
+        .instructions { color: #888; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="status" id="hud">Shadow Pulse: Awaiting Beat...</div>
+    
+    <div id="game-container">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+    </div>
+
+    <div class="ui-panel">
+        <p class="instructions">Use <b>ARROW KEYS</b> to move | Move ONLY on the <b>GLOW</b></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
